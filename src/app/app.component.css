@@ -1,0 +1,285 @@
+/* Ensure to apply styles globally */
+::ng-deep mat-slide-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333; /* Text color */
+  }
+  
+  ::ng-deep .mat-slide-toggle-thumb {
+    background-color: #2196f3; /* Thumb color */
+  }
+  
+  ::ng-deep .mat-slide-toggle-bar {
+    background-color: #ccc; /* Track color when off */
+  }
+  
+  ::ng-deep .mat-checked .mat-slide-toggle-bar {
+    background-color: #2196f3; /* Track color when on */
+  }
+  
+  ::ng-deep .mat-slide-toggle-label {
+    margin-left: 10px;
+    font-weight: bold; /* Label font weight */
+  }
+  
+  ::ng-deep .mat-slide-toggle-content {
+    justify-content: space-between; /* Adjust space between label and toggle */
+  }
+
+  .example-button-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .example-button-row button,
+  .example-button-row a[mat-button],
+  a[mat-raised-button] {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .example-button-row button[color="green"],
+  a[mat-raised-button][color="green"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .example-button-row button[color="gray"],
+  a[mat-raised-button][color="gray"] {
+    background-color: #9E9E9E;
+    color: white;
+  }
+  
+  .example-button-row button[color="red"],
+  a[mat-raised-button][color="red"] {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .example-button-row button[disabled],
+  a[mat-raised-button][disabled] {
+    background-color: #E0E0E0;
+    color: #BDBDBD;
+    cursor: not-allowed;
+  }
+  
+  .example-button-row button:hover:not([disabled]),
+  a[mat-raised-button]:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  a[mat-raised-button] {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  a[mat-raised-button]:hover {
+    background-color: #1976D2;
+  }
+  
+  a[mat-raised-button]:active {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+  /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+h1 {
+  color: #1976D2;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+button[mat-raised-button] {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button[mat-raised-button]:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button[mat-raised-button][color="green"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button[mat-raised-button][color="gray"] {
+  background-color: #9E9E9E;
+  color: white;
+}
+
+button[mat-raised-button][color="red"] {
+  background-color: #F44336;
+  color: white;
+}
+
+button[mat-raised-button][disabled],
+a[mat-raised-button][disabled] {
+  background-color: #E0E0E0;
+  color: #BDBDBD;
+}
+
+a[mat-button],
+a[mat-raised-button] {
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a[mat-button]:hover,
+a[mat-raised-button]:hover {
+  background-color: #1976D2;
+}
+
+/* Badge styles */
+.demo-section {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Icon styles */
+mat-icon {
+  font-size: 30px;
+  color: #1976D2;
+  margin: 10px 0;
+}
+
+/* Card styles */
+mat-card {
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-card {
+  width: 300px;
+  background-color: #fff;
+}
+
+mat-card-header {
+  background-color: #1976D2;
+  color: white;
+  padding: 10px;
+}
+
+mat-card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+mat-card-subtitle {
+  font-size: 14px;
+}
+
+mat-card-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+mat-card-actions button {
+  color: #1976D2;
+  text-transform: uppercase;
+}
+
+/* Checkbox styles */
+mat-checkbox {
+  margin: 10px 0;
+}
+
+.example-margin {
+  margin: 10px;
+}
+
+/* Chip set styles */
+mat-chip-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+mat-chip {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: #1976D2;
+}
+
+mat-chip[disabled] {
+  background-color: #BDBDBD;
+  color: #757575;
+}
+
+/* Toggle button group */
+mat-button-toggle-group {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+mat-button-toggle {
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+mat-button-toggle[selected] {
+  background-color: #1976D2;
+  color: white;
+}
+
+/* Divider styles */
+mat-divider {
+  margin: 20px 0;
+}
+
+/* Accordion styles */
+mat-accordion {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+mat-expansion-panel-header {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+mat-expansion-panel p {
+  padding: 10px;
+  color: #555;
+}
+
+  
+  

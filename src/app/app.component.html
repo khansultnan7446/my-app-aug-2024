@@ -1,0 +1,90 @@
+<p>Angular</p>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<div matBadge="4" matBadgeOverlap="false" class="demo-section">Text with a badge</div>
+
+<div matBadge="1" matBadgeSize="small" class="demo-section">Text with small badge</div>
+<div matBadge="1" matBadgeSize="large" class="demo-section">Text with large badge</div>
+<div class="demo-section">
+    Button with a badge on the left
+    <button mat-raised-button matBadge="8" matBadgePosition="before">
+      Action
+    </button>
+  </div>
+  <div class="demo-section">
+    Icon with a badge
+    <mat-icon matBadge="15">home</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span>
+  </div>
+  <p>You have received a file called "cat-picture.jpeg".</p>
+
+<button mat-raised-button (click)="openBottomSheet()">Open file</button>
+
+<div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="green">primary</button>
+    <button mat-raised-button color="gray">accent</button>
+    <button mat-raised-button color="red">Disabled</button>
+
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+  <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <mat-card appearance="outlined">
+    <mat-card-content>Simple card</mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img width="200" height="200px" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu ">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original <br>
+         and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with <br>
+         mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+  <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+  <mat-chip-set aria-label="Fish selection">
+    <mat-chip>One fish</mat-chip>
+    <mat-chip>Two fish</mat-chip>
+    <mat-chip>Three fish</mat-chip>
+    <mat-chip disabled>Four fish</mat-chip>
+  </mat-chip-set>
+  <button mat-raised-button (click)="openDialog()">open model</button>
+  <H1>Before</H1>
+  <mat-divider></mat-divider>
+  <h1>After</h1>
+    
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          This is the expansion title
+        </mat-panel-title>
+        <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+    
